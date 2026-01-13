@@ -17,7 +17,7 @@ Microservicio de transcripción de audio usando Whisper.cpp para workflow de n8n
 ## ✨ **Features**
 
 - **Transcripción Offline:** Usa Whisper.cpp para procesamiento local sin APIs externas.
-- **Optimizado para Español Financiero:** Prompt especializado para frases como "pagué 50 mil" o "recibí 110000 de Pansi".
+- **Optimizado para Español Financiero:** Prompt especializado para frases como "pagué 50 mil" o "Recibí 180000 de mi hermana por el cumpleaños. Pagué 95000 en el supermercado Éxito.".
 - **Procesamiento Inteligente:** Conversión automática WAV, filtros de calidad, limpieza de output.
 - **API RESTful:** Endpoint simple para integración con n8n u otros workflows.
 - **Configuración Flexible:** Parámetros ajustables (modelo, beam search, temperatura, etc.).
@@ -300,7 +300,8 @@ const WHISPER_BEST_OF = 3;
 const WHISPER_TEMPERATURE = 0.0;        // Determinismo
 
 // Prompt especializado para frases financieras
-const WHISPER_PROMPT = `Pansi me dio 110000 en efectivo. Recibí 110000 de Pansi...`;
+const WHISPER_PROMPT = `Transferí 250000 a cuenta de ahorros en Davivienda. Recibí 180000 de mi hermana por el cumpleaños. Pagué 95000 en el supermercado Éxito.`;
+
 
 // Endpoint principal
 app.post('/transcribe', upload.any(), (req, res) => {
