@@ -1,0 +1,9 @@
+node_modules/
+uploads/
+*.log
+.env
+.DS_Store
+whisper.cpp/build/
+whisper.cpp/models/for-tests-*
+*.backup
+*.tmp
