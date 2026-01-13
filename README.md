@@ -204,7 +204,7 @@ rm -rf uploads/*
     "content": [
       {
         "models": "whisper-cpp-base",
-        "text": "pagué 50000 de cuidado de los bebés en efectivo."
+        "text": "transferí 250000 a cuenta de ahorros en Davivienda."
       }
     ]
   }
